@@ -4,6 +4,8 @@ node-events
 @http
 post /my-event
 
+@static
+
 @events
 my-event
 
