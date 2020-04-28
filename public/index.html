@@ -52,8 +52,8 @@
   .flex-direction-column {
     flex-direction: column;
   }
-  .align-items-center {
-    align-items: center;
+  .align-items-initial {
+    align-items: initial;
   }
   .justify-content-center {
     justify-content: center;
@@ -94,6 +94,9 @@
   .border-radius-pill {
     border-radius: 999px;
   }
+  .padding1 {
+    padding: 1rem;
+  }
   .padding-top1 {
     padding-top: 1rem;
   }
@@ -112,14 +115,25 @@
   .font-weight-500 {
     font-weight: 500;
   }
+
+  @media only screen and (min-width:30em) {
+    .flex-direction-row-lg {
+      flex-direction: row;
+    }
+    .align-items-center-lg {
+      align-items: center;
+    }
+  }
 </style>
 <body
   class="
     padding-top5
+    padding-left2
     linear-gradient
     display-flex
     flex-direction-column
-    align-items-center
+    align-items-initial
+    align-items-center-lg
   "
  >
   <div
@@ -137,6 +151,8 @@
     <div
       class="
         display-flex
+        flex-direction-column
+        flex-direction-row-lg
         justify-content-space-between
       "
     >
@@ -147,6 +163,7 @@
         <input type="hidden" name="name" value="one">
         <button
           class="
+            margin-bottom1
             padding-top1
             padding-right2
             padding-bottom1
@@ -173,6 +190,7 @@
         <input type="hidden" name="name" value="two">
         <button
           class="
+            margin-bottom1
             padding-top1
             padding-right2
             padding-bottom1
@@ -199,6 +217,7 @@
         <input type="hidden" name="name" value="three">
         <button
           class="
+            margin-bottom1
             padding-top1
             padding-right2
             padding-bottom1
