@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Begin Event Functions Example</title>
+</head>
+<style>
+ :root {
+    --light: #FEFEFE;
+    --mid: #DCDCDC;
+    --mid-dark: #DDD;
+    --dark: #666;
+    --blue: #007ACC;
+    --purple: #8D30FF;
+    --magenta: #FF577B;
+    --angle: 45deg;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: var(--light);
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      -system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      Roboto, Helvetica, Arial,
+      sans-serif,
+      "Apple Color Emoji";
+  }
+  html,
+  body,
+  .height-100 {
+    height: 100%;
+  }
+  .margin-bottom1 {
+    margin-bottom: 1rem;
+  }
+  .padding-top5 {
+    padding-top: 9rem;
+  }
+  .min-width22 {
+    min-width: 22rem;
+  }
+  .display-flex {
+    display: flex;
+  }
+  .flex-direction-column {
+    flex-direction: column;
+  }
+  .align-items-center {
+    align-items: center;
+  }
+  .justify-content-center {
+    justify-content: center;
+  }
+  .justify-content-space-between {
+    justify-content: space-between;
+  }
+  .text-decoration-none {
+    text-decoration: none;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .border-solid {
+    border: 2px solid;
+  }
+  .color-light {
+    color: var(--light);
+  }
+  .color-transparent-active:active {
+    color: var(--purple);
+  }
+  .linear-gradient {
+    background-image: linear-gradient(var(--angle), var(--magenta), var(--purple));
+  }
+  .background-size-cover {
+    background-size: cover;
+  }
+  .background-color-transparent {
+    background-color: transparent;
+  }
+  .background-color-light-active:active {
+    background-color: var(--light);
+  }
+  .border-color-light {
+    border-color: var(--light);
+  }
+  .border-radius-pill {
+    border-radius: 999px;
+  }
+  .padding-top1 {
+    padding-top: 1rem;
+  }
+  .padding-right2 {
+    padding-right: 2rem;
+  }
+  .padding-bottom1 {
+    padding-bottom: 1rem;
+  }
+  .padding-left2 {
+    padding-left: 2rem;
+  }
+  .font-size1 {
+    font-size: 1rem;
+  }
+  .font-weight-500 {
+    font-weight: 500;
+  }
+</style>
+<body
+  class="
+    padding-top5
+    linear-gradient
+    display-flex
+    flex-direction-column
+    align-items-center
+  "
+ >
+  <div
+    class="
+      min-width22
+    "
+  >
+    <h1
+      class="
+        margin-bottom1
+      "
+    >
+      Publish an event
+    </h1>
+    <div
+      class="
+        display-flex
+        justify-content-space-between
+      "
+    >
+      <form
+        action=/my-event
+        method=POST
+      >
+        <input type="hidden" name="name" value="one">
+        <button
+          class="
+            padding-top1
+            padding-right2
+            padding-bottom1
+            padding-left2
+            font-size1
+            font-weight-500
+            color-light
+            color-transparent-active
+            border-radius-pill
+            border-solid
+            border-color-light
+            background-color-transparent
+            background-color-light-active
+            cursor-pointer
+          "
+        >
+          One
+        </button>
+      </form>
+      <form
+        action=/my-event
+        method=POST
+      >
+        <input type="hidden" name="name" value="two">
+        <button
+          class="
+            padding-top1
+            padding-right2
+            padding-bottom1
+            padding-left2
+            font-size1
+            font-weight-500
+            color-light
+            color-transparent-active
+            border-radius-pill
+            border-solid
+            border-color-light
+            background-color-transparent
+            background-color-light-active
+            cursor-pointer
+          "
+        >
+          Two
+        </button>
+      </form>
+      <form
+        action=/my-event
+        method=POST
+      >
+        <input type="hidden" name="name" value="three">
+        <button
+          class="
+            padding-top1
+            padding-right2
+            padding-bottom1
+            padding-left2
+            font-size1
+            font-weight-500
+            color-light
+            color-transparent-active
+            border-radius-pill
+            border-solid
+            border-color-light
+            background-color-transparent
+            background-color-light-active
+            cursor-pointer
+          "
+        >
+          Three
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

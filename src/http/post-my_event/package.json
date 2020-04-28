@@ -1,0 +1,15 @@
+{
+  "name": "post-my_event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "@dam",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@architect/functions": "^3.8.4"
+  }
+}
