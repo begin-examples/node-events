@@ -7,10 +7,6 @@
 <style>
  :root {
     --light: #FEFEFE;
-    --mid: #DCDCDC;
-    --mid-dark: #DDD;
-    --dark: #666;
-    --blue: #007ACC;
     --purple: #8D30FF;
     --magenta: #FF577B;
     --angle: 45deg;
@@ -31,6 +27,7 @@
       Roboto, Helvetica, Arial,
       sans-serif,
       "Apple Color Emoji";
+      line-height: 1.6;
   }
   html,
   body,
@@ -43,8 +40,8 @@
   .padding-top5 {
     padding-top: 9rem;
   }
-  .min-width22 {
-    min-width: 22rem;
+  .max-width22 {
+    max-width: 22rem;
   }
   .display-flex {
     display: flex;
@@ -61,9 +58,6 @@
   .justify-content-space-between {
     justify-content: space-between;
   }
-  .text-decoration-none {
-    text-decoration: none;
-  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -73,7 +67,7 @@
   .color-light {
     color: var(--light);
   }
-  .color-transparent-active:active {
+  .color-purple-active:active {
     color: var(--purple);
   }
   .linear-gradient {
@@ -101,13 +95,13 @@
     padding-top: 1rem;
   }
   .padding-right2 {
-    padding-right: 2rem;
+    padding-right: 1.5rem;
   }
   .padding-bottom1 {
     padding-bottom: 1rem;
   }
   .padding-left2 {
-    padding-left: 2rem;
+    padding-left: 1.5rem;
   }
   .font-size1 {
     font-size: 1rem;
@@ -128,6 +122,7 @@
 <body
   class="
     padding-top5
+    padding-right2
     padding-left2
     linear-gradient
     display-flex
@@ -138,7 +133,7 @@
  >
   <div
     class="
-      min-width22
+      max-width22
     "
   >
     <h1
@@ -154,13 +149,14 @@
         flex-direction-column
         flex-direction-row-lg
         justify-content-space-between
+        margin-bottom1
       "
     >
       <form
         action=/my-event
         method=POST
       >
-        <input type="hidden" name="name" value="one">
+        <input type="hidden" name="name" value="🐶">
         <button
           class="
             margin-bottom1
@@ -171,7 +167,7 @@
             font-size1
             font-weight-500
             color-light
-            color-transparent-active
+            color-purple-active
             border-radius-pill
             border-solid
             border-color-light
@@ -180,14 +176,14 @@
             cursor-pointer
           "
         >
-          One
+          Bark
         </button>
       </form>
       <form
         action=/my-event
         method=POST
       >
-        <input type="hidden" name="name" value="two">
+        <input type="hidden" name="name" value="😺">
         <button
           class="
             margin-bottom1
@@ -207,14 +203,14 @@
             cursor-pointer
           "
         >
-          Two
+          Meow
         </button>
       </form>
       <form
         action=/my-event
         method=POST
       >
-        <input type="hidden" name="name" value="three">
+        <input type="hidden" name="name" value="🐮">
         <button
           class="
             margin-bottom1
@@ -234,10 +230,13 @@
             cursor-pointer
           "
         >
-          Three
+         Moo
         </button>
       </form>
     </div>
+    <p>
+      Now go check out the click tracking in your app's <a class="color-light font-weight-500" href="https://begin.com">Begin data view →</a>
+    </p>
   </div>
 </body>
 </html>
