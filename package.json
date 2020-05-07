@@ -1,27 +1,13 @@
 {
-  "name": "node-events",
-  "version": "1.0.0",
+  "name": "begin-app",
+  "version": "0.0.0",
   "description": "Example demonstrating publishing and subscribing to an event",
-  "main": "index.js",
-  "dependencies": {
-    "@architect/functions": "^3.8.4",
-    "@begin/data": "^1.2.2"
-  },
-  "devDependencies": {
-    "@architect/sandbox": "^1.9.5"
-  },
   "scripts": {
     "start": "npx sandbox"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/begin-examples/node-events.git"
-  },
-  "keywords": [],
-  "author": "@dam",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/begin-examples/node-events/issues"
-  },
-  "homepage": "https://github.com/begin-examples/node-events#readme"
+  "devDependencies": {
+    "@architect/functions": "^3.8.4",
+    "@begin/data": "^1.2.2",
+    "@architect/sandbox": "^1.9.5"
+  }
 }
