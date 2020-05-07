@@ -4,7 +4,7 @@
   "description": "Example demonstrating publishing and subscribing to an event",
   "main": "index.js",
   "dependencies": {
-    "@architect/functions": "^3.8.4",
+    "@architect/functions": "^3.9.1",
     "@begin/data": "^1.2.2"
   },
   "devDependencies": {
