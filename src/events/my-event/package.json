@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@architect/functions": "^3.13.1",
-    "@begin/data": "^1.2.3"
+    "@architect/functions": "latest",
+    "@begin/data": "latest"
   }
 }
