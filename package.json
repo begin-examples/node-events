@@ -10,7 +10,7 @@
     "@architect/sandbox": "latest",
     "@begin/data": "latest",
     "cross-env": "^7.0.3",
-    "tap-spec": "^2.2.2",
+    "tap-spec": "^5.0.0",
     "tape": "^5.2.2",
     "tiny-json-http": "^7.3.0"
   }
