@@ -28,7 +28,7 @@ test('data.set (one document)', async t => {
     key: 'task1'
   })
   t.ok(result.key === 'task1', 'Wrote document')
-  logJSON(result,null,2)
+  logJSON(result)
 })
 
 test('data.get (one document)', async t => {
@@ -38,7 +38,7 @@ test('data.get (one document)', async t => {
     key: 'task1'
   })
   t.ok(task.key === 'task1', 'Read document')
-  logJSON(task,null,2)
+  logJSON(task)
 })
 
 test('data.destroy (one document)', async t => {
@@ -48,7 +48,7 @@ test('data.destroy (one document)', async t => {
     key: 'task1'
   })
   t.ok(result, 'Deleted document')
-  logJSON(result,null,2)
+  logJSON(result)
 })
 
 /**
@@ -60,7 +60,7 @@ test('data.set generates a unique key', async t => {
     table: 'tasks'
   })
   t.ok(result.key, 'Saved document has a key')
-  logJSON(result,null,2)
+  logJSON(result)
 })
 
 /**
@@ -75,7 +75,7 @@ test('data.set allows for any JSON document; only table and key are reserved', a
     timeframe: new Date(Date.now()).toISOString()
   })
   t.ok(Object.getOwnPropertyNames(result.key).length > 2, 'Saved document has multiple properties')
-  logJSON(result,null,2)
+  logJSON(result)
 })
 
 /**
@@ -103,7 +103,7 @@ test('data.set accepts an array to batch save documents', async t => {
 
   }])
   t.equal(result.length, 3, 'Saved document batch')
-  logJSON(result,null,2)
+  logJSON(result)
 })
 
 /**
@@ -115,7 +115,7 @@ test('data.get can read an entire table', async t => {
     table: 'tasks'
   })
   t.ok(result.length > 1, 'Got docs')
-  logJSON(result,null,2)
+  logJSON(result)
 })
 
 test('Shut down sandbox', async t => {
