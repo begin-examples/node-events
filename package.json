@@ -7,7 +7,7 @@
     "test": "tape test/*-test.js ./test/**/*-test.js | tap-spec"
   },
   "devDependencies": {
-    "@architect/sandbox": "^4.2.1",
+    "@architect/sandbox": "^4.2.2",
     "@begin/data": "^3.0.4",
     "tap-spec": "^5.0.0",
     "tape": "^5.3.1",
