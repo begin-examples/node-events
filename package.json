@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@architect/sandbox": "^5.2.4",
-    "@begin/data": "^4.0.0",
+    "@begin/data": "^4.0.1",
     "tap-spec": "^5.0.0",
     "tape": "^5.5.3",
     "tiny-json-http": "^7.4.2"
